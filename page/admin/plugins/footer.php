@@ -8,7 +8,8 @@
 <?php
 //MODALS
 include '../../modals/logout.php';
-
+include '../../modals/announcement/announcement.php';
+include '../../modals/announcement/update_announcement.php';
 ?>
 <!-- jQuery -->
 <!-- <script src="../../plugins/jquery/jquery.min.js"></script> -->

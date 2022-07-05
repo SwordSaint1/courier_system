@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 05, 2022 at 12:23 PM
+-- Generation Time: Jul 05, 2022 at 01:52 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.25
 
@@ -57,6 +57,15 @@ CREATE TABLE `announcements` (
   `date_posted` varchar(20) DEFAULT NULL,
   `content` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `announcements`
+--
+
+INSERT INTO `announcements` (`id`, `title`, `author`, `date_posted`, `content`) VALUES
+(1, 'a', 'b', 'c', ' d'),
+(3, 'asd', 'basd', '2022-07-06', ' casd'),
+(4, 'a', 'b', '2022-07-05', ' c');
 
 -- --------------------------------------------------------
 
@@ -129,7 +138,7 @@ ALTER TABLE `accounts`
 -- AUTO_INCREMENT for table `announcements`
 --
 ALTER TABLE `announcements`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `customer_feedback`

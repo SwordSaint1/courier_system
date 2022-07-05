@@ -6,8 +6,7 @@
     $server_date_time = date('Y-m-d H:i:s');
     $server_date_only = date('Y-m-d');
     $server_time = date('H:i:s');
-    $server_year = date('Y');
-    $dateqr = date('Ymd');
+    $server_month = date('Y-m-01');
    
     try {
         $conn = new PDO ("mysql:host=$servername;dbname=courier_system",$username,$pass);
