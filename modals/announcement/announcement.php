@@ -11,11 +11,11 @@
             <div class="row">
                 <div class="col-4">
                   <label>Title:</label>
-                  <input type="text" name="title" id="title" class="form-control">
+                  <input type="text" name="title" id="title" class="form-control" autocomplete="off">
                 </div>
                 <div class="col-4">
                   <label>Author</label>
-                  <input type="text" name="author" id="author" class="form-control">
+                  <input type="text" name="author" id="author" class="form-control" autocomplete="off">
                 </div>
                  <div class="col-4">
                   <label>Post Date:</label>
@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-12">
                   <label>Content</label>
-                  <textarea id="content" class="form-control" style="height: 300px;"> </textarea>
+                  <textarea id="content" class="form-control" style="height: 300px;" autocomplete="off"> </textarea>
                 </div>
             </div>
       </div>

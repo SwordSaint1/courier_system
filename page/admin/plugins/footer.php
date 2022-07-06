@@ -10,6 +10,10 @@
 include '../../modals/logout.php';
 include '../../modals/announcement/announcement.php';
 include '../../modals/announcement/update_announcement.php';
+include '../../modals/messenger/messenger.php';
+include '../../modals/messenger/update_messenger.php';
+include '../../modals/client/client.php';
+include '../../modals/client/update_client.php';
 ?>
 <!-- jQuery -->
 <!-- <script src="../../plugins/jquery/jquery.min.js"></script> -->

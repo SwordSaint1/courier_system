@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 05, 2022 at 01:52 PM
+-- Generation Time: Jul 06, 2022 at 12:16 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.25
 
@@ -70,6 +70,32 @@ INSERT INTO `announcements` (`id`, `title`, `author`, `date_posted`, `content`) 
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `client_details`
+--
+
+CREATE TABLE `client_details` (
+  `id` int(50) NOT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `address` varchar(100) DEFAULT NULL,
+  `client_code` varchar(100) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `phone_no` varchar(20) DEFAULT NULL,
+  `nature_business` varchar(100) DEFAULT NULL,
+  `business_type` varchar(50) DEFAULT NULL,
+  `operation_years` varchar(20) DEFAULT NULL,
+  `client_website` varchar(100) DEFAULT NULL,
+  `client_branch` varchar(200) DEFAULT NULL,
+  `payment_option` varchar(50) DEFAULT NULL,
+  `bank_reference` varchar(100) DEFAULT NULL,
+  `gross_revenue` varchar(20) DEFAULT NULL,
+  `shipment_mode` varchar(50) DEFAULT NULL,
+  `proposed_credit` varchar(20) DEFAULT NULL,
+  `credit_limit` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `customer_feedback`
 --
 
@@ -113,6 +139,12 @@ ALTER TABLE `announcements`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `client_details`
+--
+ALTER TABLE `client_details`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `customer_feedback`
 --
 ALTER TABLE `customer_feedback`
@@ -141,6 +173,12 @@ ALTER TABLE `announcements`
   MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
+-- AUTO_INCREMENT for table `client_details`
+--
+ALTER TABLE `client_details`
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `customer_feedback`
 --
 ALTER TABLE `customer_feedback`
@@ -150,7 +188,7 @@ ALTER TABLE `customer_feedback`
 -- AUTO_INCREMENT for table `messengers`
 --
 ALTER TABLE `messengers`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

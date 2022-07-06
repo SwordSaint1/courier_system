@@ -27,7 +27,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                <li class="nav-item">
-            <a href="dashboard.php" class="nav-link active">
+            <a href="dashboard.php" class="nav-link ">
               <i class="fas fa-bullhorn"></i>
               <p>
                 Announcement
@@ -54,7 +54,7 @@
             </a>
           </li>
              <li class="nav-item">
-            <a href="messengers.php" class="nav-link">
+            <a href="messengers.php" class="nav-link ">
               <i class="fas fa-user-friends"></i>
               <p>
                 Messengers
@@ -63,7 +63,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="clients.php" class="nav-link">
+            <a href="clients.php" class="nav-link active">
               <i class="fas fa-users"></i>
               <p>
                 Clients
